@@ -57,20 +57,20 @@ calcularBtn.addEventListener('click', () => {
 
     // Calcula a comissão com base no número de vendas
     let comissaoAtivacao = 0;
-    if (numVendas >= 1 && numVendas <= 4) {
-        comissaoAtivacao = totalAtivacoes * 0.3;
-    } else if (numVendas >= 7 && numVendas <= 8) {
-        comissaoAtivacao = totalAtivacoes * 0.35;
+    if (numVendas >= 1 && numVendas <= 6) {
+        comissaoAtivacao = totalAtivacoes * 0.1;
+    } else if (numVendas >= 7 && numVendas <= 9) {
+        comissaoAtivacao = totalAtivacoes * 0.15;
     } else if (numVendas >= 10 && numVendas <= 14) {
-        comissaoAtivacao = totalAtivacoes * 0.40;
+        comissaoAtivacao = totalAtivacoes * 0.2;
     } else if (numVendas >= 15) {
-        comissaoAtivacao = totalAtivacoes * 0.50;
+        comissaoAtivacao = totalAtivacoes * 0.3;
     }
 
-    // Calcula o bônus adicional de 5% para vendas acima de 8
+    // Calcula o bônus adicional de 3% para vendas acima de 6
     let bonusMensalidades = 0;
-    if (numVendas > 8) {
-        bonusMensalidades = totalMensalidades * 0.05;
+    if (numVendas > 6) {
+        bonusMensalidades = totalMensalidades * 0.03;
     }
 
     // Obtém os próximos três meses
