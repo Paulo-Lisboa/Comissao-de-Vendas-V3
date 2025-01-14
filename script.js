@@ -57,14 +57,14 @@ calcularBtn.addEventListener('click', () => {
 
     // Calcula a comissão com base no número de vendas
     let comissaoAtivacao = 0;
-    if (numVendas >= 1 && numVendas <= 6) {
-        comissaoAtivacao = totalAtivacoes * 0.1;
-    } else if (numVendas >= 7 && numVendas <= 9) {
-        comissaoAtivacao = totalAtivacoes * 0.15;
-    } else if (numVendas >= 10 && numVendas <= 14) {
-        comissaoAtivacao = totalAtivacoes * 0.2;
+    if (numVendas >= 1 && numVendas <= 4) {
+        comissaoAtivacao = totalAtivacoes * 0.30;
+    } else if (numVendas >= 5 && numVendas <= 8) {
+        comissaoAtivacao = totalAtivacoes * 0.33;
+    } else if (numVendas >= 9 && numVendas <= 14) {
+        comissaoAtivacao = totalAtivacoes * 0.35;
     } else if (numVendas >= 15) {
-        comissaoAtivacao = totalAtivacoes * 0.3;
+        comissaoAtivacao = totalAtivacoes * 0.40;
     }
 
     // Calcula o bônus adicional de 3% para vendas acima de 6
