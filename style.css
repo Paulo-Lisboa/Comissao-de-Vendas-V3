@@ -1,0 +1,90 @@
+/* style.css */
+
+/* Estilo para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('img/imagem.png');
+    background-size: cover; /* Ajusta a imagem para cobrir todo o espaço */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-position: center; /* Centraliza a imagem */
+    background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo com opacidade */
+    color: #ffffff; /* Cor do texto principal */
+}
+
+/* Estilo para rótulos e entradas */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para botões */
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none;
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s; /* Efeito de transição */
+}
+
+button:hover {
+    background-color: #45a049; /* Cor ao passar o mouse */
+}
+
+/* Estilo para a tabela */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Sombra da tabela */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+    font-size: 1em;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Estilo para o resumo */
+.resultado {
+    border: 2px solid #4CAF50;
+    background-color: #f9f9f9; /* Fundo do resumo */
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+    display: inline-block;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    color: #000000; /* Texto preto */
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
